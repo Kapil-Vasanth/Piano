@@ -7,6 +7,7 @@
     margin: 0;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -49,4 +50,29 @@
   .black.active {
     background-color: #333;
     transform: translateY(5px);
+  }
+
+  .board{
+    border: 1px solid white;
+    height:200px;
+    width: 1400px;
+    background: red;
+  }
+
+  .customNote .white{
+    background: lightgreen;
+    
+    overflow: hidden;
+  }
+  .animate{
+    animation: animationName 5s linear forwards;
+  }
+
+  @keyframes animationName {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(100%);
+    }
   }
